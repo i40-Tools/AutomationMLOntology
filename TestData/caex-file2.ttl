@@ -1,0 +1,55 @@
+@prefix aml:     <http://vocab.cs.uni-bonn.de/aml#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+aml:CAEXFile_2
+      rdf:type aml:CAEXFile ;
+      rdfs:label "CAEX File 2"@en ;
+      rdfs:comment "CAEX File 2 with a Role Class Library"@en ;
+	  aml:hasRoleClassLib aml:RoleClassLib_2;
+	.  
+	
+aml:RoleClassLib_2
+      rdf:type aml:RoleClassLib ;
+      rdfs:label "RoleClassLib 2"@en ;
+      rdfs:comment "RoleClassLib 2 with a Role Class with 2 attribute"@en ;
+	  aml:hasRoleClass aml:RoleClass_2;
+	.  	
+
+aml:RoleClass_2
+      rdf:type aml:RoleClass ;
+      rdfs:label "RoleClass 2"@en ;
+      rdfs:comment "RoleClass 2 with a 2 attribute"@en ;
+	  aml:roleClassRefSem aml:eClassSpecification_2; 
+	  aml:hasAttribute aml:Attribute_2;
+	  aml:hasAttribute aml:Attribute_3;
+	.  		
+
+aml:Attribute_2
+      rdf:type aml:Attribute ;
+      rdfs:label "Attribute 2"@en ;
+      schema:name "Cooling type"@en ;
+	  aml:refSemantic "0173-1#02-BAE122#006";
+	.
+	
+aml:Attribute_3
+      rdf:type aml:Attribute ;
+      rdfs:label "Attribute 3"@en ;
+      schema:name "Construction form of DC motor"@en ;
+	  aml:refSemantic "0173-1#02-BAE069#007";
+	.	
+	
+aml:eClassSpecification_2
+      rdf:type aml:eClassSpecification ;
+      rdfs:label "eClassSpecification 2"@en ;
+      rdfs:comment "eClassSpecification 2"@en ;
+	  aml:eClassIRDI "0173-1#BASIC_1_1#01-ABW077#009" ;
+      aml:eClassVersion "9.0" ;
+      aml:classificationClass "27022501" ;
+	.  		

@@ -1,0 +1,49 @@
+@prefix aml:     <http://vocab.cs.uni-bonn.de/aml#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# Data of a minimal example
+
+aml:CAEXFile_1
+      rdf:type aml:CAEXFile ;
+      rdfs:label "CAEX File 1"@en ;
+      rdfs:comment "CAEX File 1 with a Role Class Library"@en ;
+	  aml:hasRoleClassLib aml:RoleClassLib_1;
+	.  
+	
+aml:RoleClassLib_1
+      rdf:type aml:RoleClassLib ;
+      rdfs:label "RoleClassLib 1"@en ;
+      rdfs:comment "RoleClassLib 1 with a Role Class with 1 attribute"@en ;
+	  aml:hasRoleClass aml:RoleClass_1;
+	.  	
+	
+aml:RoleClass_1
+      rdf:type aml:RoleClass ;
+      rdfs:label "RoleClass 1"@en ;
+      rdfs:comment "RoleClass 1 with a 1 attribute"@en ;
+	  aml:roleClassRefSem aml:eClassSpecification_1; 
+	  aml:hasAttribute aml:Attribute_1;
+	.  	
+
+aml:eClassSpecification_1
+      rdf:type aml:eClassSpecification ;
+      rdfs:label "eClassSpecification 1"@en ;
+      rdfs:comment "eClassSpecification 1"@en ;
+	  aml:eClassIRDI "0173-1#BASIC_1_1#01-ABW077#009" ;
+      aml:eClassVersion "9.0" ;
+      aml:classificationClass "27022501" ;
+	.  		
+	
+aml:Attribute_1
+      rdf:type aml:Attribute ;
+      rdfs:label "Attribute 1"@en ;
+      schema:name "Construction form of DC motor"@en ;
+	  aml:refSemantic "0173-1#02-BAE069#007";
+	.  

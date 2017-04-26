@@ -1,0 +1,298 @@
+Prefix: : <https://w3id.org/i40/aml#>
+Prefix: aml: <https://w3id.org/i40/aml#>
+Prefix: cc: <http://creativecommons.org/ns#>
+Prefix: cp: <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: foaf: <http://xmlns.com/foaf/spec/>
+Prefix: om: <http://www.wurvoc.org/vocabularies/om-1.8/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: prov: <http://www.w3.org/ns/prov#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: schema: <http://schema.org/>
+Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
+Prefix: terms: <http://purl.org/dc/terms/>
+Prefix: vann: <http://purl.org/vocab/vann/>
+Prefix: voaf: <http://purl.org/vocommons/voaf#>
+Prefix: void: <http://rdfs.org/ns/void#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+Class: schema:Person
+
+    
+Individual: <http://eis.iai.uni-bonn.de/Irlan>
+
+    Annotations: 
+        schema:affiliation <http://dbpedia.org/resource/University_of_Bonn>,
+        rdfs:label "Irlan Grangel-Gonzalez"
+    
+    Types: 
+        schema:Person
+    
+    
+Individual: <https://at.linkedin.com/in/olga-kovalenko-979552108/>
+
+    Annotations: 
+        rdfs:label "Olga Kovalenko"
+    
+    Types: 
+        schema:Person
+   
+
+    
+Individual: aml:AILevelSW
+
+    Types: 
+        aml:ExternalInterface
+    
+    Facts:  
+     aml:hasICID  "91a89c81-b794-421c-8f24-458f51307f72",
+     aml:hasNameIC  "AI Level SW"@en,
+     aml:hasRefBaseClassPathIC  "NE150InterfaceLibrary/SWSignal"
+    
+    
+Individual: aml:AdditionalInformation1
+
+    Types: 
+        aml:AdditionalInformation
+    
+    Facts:  
+     aml:hasAMLVersion  2.0,
+     aml:hasWriterId  "916578CA-FE0D-474E-A4FC-9E1719892369",
+     aml:hasWriterName  "AutomationML Editor"@en,
+     aml:hasWriterRelease  "4.1.5.0",
+     aml:hasWriterVendor  "AutomationML e.V."@en,
+     aml:hasWriterVendorURL  "www.AutomationML.org"^^xsd:anyURI,
+     aml:hasWriterVersion  "4.1.5",
+     aml:lastWritingDateTime  "2001-10-26T21:32:52"^^xsd:dateTime
+    
+    
+Individual: aml:AttValue1
+
+    Facts:  
+     aml:numerical_value  0
+    
+    
+Individual: aml:DemoArea
+
+    Types: 
+        aml:InternalElement
+    
+    Facts:  
+     aml:isPartOfIE  aml:DemoSite,
+     aml:hasIDIE  "33a47300-eb7e-4831-9448-b358d4246dcd",
+     aml:hasNameIE  "DemoArea"@en
+    
+    
+Individual: aml:DemoEnterprise
+
+    Types: 
+        aml:InternalElement
+    
+    Facts:  
+     aml:hasIDIE  "d812ea1e-eaa2-45f4-8c82-72ecc50236c5",
+     aml:hasNameIE  "DemoEnterprise"@en
+    
+    
+Individual: aml:DemoSite
+
+    Types: 
+        aml:InternalElement
+    
+    Facts:  
+     aml:isPartOfIE  aml:DemoEnterprise,
+     aml:hasIDIE  "38d6171f-0cb1-48e0-925f-f03902af8ee2",
+     aml:hasNameIE  "DemoSite"@en
+    
+    
+Individual: aml:ExampleInstanceHierarchy
+
+    Types: 
+        aml:CAEXFile
+    
+    
+Individual: aml:FlowchartNumber
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeDataType  "xs:string",
+     aml:hasAttributeDescription  "Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)"@en,
+     aml:hasAttributeValue  "1000_4",
+     aml:hasNameAttribute  "FlowchartNumber"@en,
+     aml:refSemanticAttribute  "NE 150 v1.0 Annex 1.1.5"
+    
+    
+Individual: aml:GMA6.16BeispielPIDVersion2.97
+
+    Types: 
+        aml:CAEXFile
+    
+    Facts:  
+     aml:hasAdditionalInformation  aml:AdditionalInformation1,
+     aml:hasNameFile  "GMA 6.16Beispiel PID Version 2.97 - AutomationML Datei.aml"@de,
+     aml:hasSchemaVersion  2.15
+    
+    
+Individual: aml:L1001
+
+    Types: 
+        aml:InternalElement
+    
+    Facts:  
+     aml:hasAttribute  aml:PCEDescription,
+     aml:isPartOfIE  aml:DemoArea,
+     aml:hasIDIE  "044a8a9d-458e-4632-a19d-f240a0e64e95",
+     aml:hasNameIE  "L 1001"@en,
+     aml:refBaseSystemUnitPath  "NE150SUCLibrary/PCELoop"
+    
+    
+Individual: aml:LIRCS1
+
+    Types: 
+        aml:InternalElement
+    
+    Facts:  
+     aml:hasAttribute  aml:PCEDescription,
+     aml:hasAttributeIE  aml:FlowchartNumber,
+     aml:hasAttributeIE  aml:PCEFunction,
+     aml:hasAttributeIE  aml:PCEInitial,
+     aml:hasExternalInterface  aml:AILevelSW,
+     aml:isPartOfIE  aml:L1001,
+     aml:hasIDIE  "adb2ebf7-dc6f-479b-abfe-64a4fd69c209",
+     aml:hasNameIE  "LIRCS+-A+-"@en,
+     aml:refBaseSystemUnitPath  "NE150SUCLibrary/PCERequest"
+    
+    
+Individual: aml:MaxConveyingSpeed
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasUnitAttribute  aml:speedMeasurement,
+     aml:hasNameAttribute  "maxConveyingSpeed"@en
+    
+    
+Individual: aml:MeasurementRangeEnd
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeDataType  "xs:double",
+     aml:hasAttributeDescription  "Actual measurement range end of sensor in field"@en,
+     aml:refSemanticAttribute  "NE 150 v1.0 Annex 3.3.5"
+    
+    
+Individual: aml:MeasurementRangeStart
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeDataType  "xs:double",
+     aml:hasAttributeDescription  "Actual measurement range start of sensor in field"@en,
+     aml:hasNameAttribute  "MeasurementRangeStart"@en
+    
+    
+Individual: aml:NE150DemoProject
+
+    Types: 
+        aml:InstanceHierarchy
+    
+    Facts:  
+     aml:hasInternalElement  aml:DemoEnterprise,
+     aml:hasNameIH  "NE150DemoProject"@en
+    
+    
+Individual: aml:OldPCE
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeDataType  "xs:string",
+     aml:hasAttributeDescription  "Old PCE designation for migration or renaming"@en,
+     aml:hasAttributeValue  "L 1101",
+     aml:hasNameAttribute  "OldPCE"^^xsd:string,
+     aml:refSemanticAttribute  "NE 150 v1.0 Annex 2.1.4"
+    
+    
+Individual: aml:PCEDescription
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeDataType  "xs:string",
+     aml:hasAttributeDescription  "Complete PCE description"@en,
+     aml:hasAttributeValue  "Level Control B1000",
+     aml:hasNameAttribute  "PCEDescription"@en,
+     aml:refSemanticAttribute  "NE 150 v1.0 Annex 2.1.3"
+    
+    
+Individual: aml:PCEFunction
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeDataType  "xs:string",
+     aml:hasAttributeDescription  "The PCE function describes the device-independent PCE task solution"@en,
+     aml:hasAttributeValue  "LIRCS+-A+-",
+     aml:hasNameAttribute  "PCEFunction"@en,
+     aml:refSemanticAttribute  "NE 150 v1.0 Annex 2.1.1"
+    
+    
+Individual: aml:PCEInitial
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeDataType  "xs:string",
+     aml:hasAttributeDescription  "PCE category, e.g.: L"@en,
+     aml:hasAttributeValue  "L",
+     aml:hasNameAttribute  "PCEInitial"@en,
+     aml:refSemanticAttribute  "NE 150 v1.0 Annex 2.1.2"
+    
+    
+Individual: aml:SoftwareSignalName
+
+    Types: 
+        aml:Attribute
+    
+    Facts:  
+     aml:hasAttributeIC  aml:SoftwareSignalName,
+     aml:hasAttributeDataType  "xs:string",
+     aml:hasAttributeDescription  "Unequivocal PCS input or output name"@en,
+     aml:hasAttributeValue  "L1001_PV",
+     aml:hasNameAttribute  "SoftwareSignalName"@en,
+     aml:refSemanticAttribute  "NE 150 v1.0 Annex"
+    
+    
+Individual: aml:milliampere
+
+    Types: 
+        om:Unit_of_measure
+    
+    
+Individual: aml:speedMeasurement
+
+    Types: 
+        om:Measure
+    
+    Facts:  
+     aml:unit_of_measure  om:metre_per_second-time,
+     aml:numerical_value  1.5
+    
+    
+Individual: om:metre_per_second-time
+
+    Types: 
+        om:Unit_of_measure
+    
+    
