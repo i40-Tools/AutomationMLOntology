@@ -20,28 +20,22 @@
 @base <https://w3id.org/i40/aml#> .
 
 <https://w3id.org/i40/aml#> rdf:type owl:Ontology ;
-                             terms:creator <https://at.linkedin.com/in/olga-kovalenko-979552108/> ;
-                             void:vocabulary foaf: ,
-                                             rdf: ;
-                             rdfs:comment "A vocabulary to represents the AutomationML Standard - IEC 62714"@en ;
-                             void:vocabulary rdfs: ,
-                                             skos: ;
-                             skos:prefLabel "aml"@en ;
-                             terms:creator <http://eis.iai.uni-bonn.de/Irlan> ;
-                             void:vocabulary dc: ;
+                             terms:creator <https://at.linkedin.com/in/olga-kovalenko-979552108/> ,
+                                           <http://sda.cs.uni-bonn.de/people/irlan-grangel-gonzalez/> ;
+                             rdfs:comment "A Vocabulary to represent the AutomationML Standard - IEC 62714"@en ;
+                             skos:definition "A Vocabulary to represent the AutomationML Standard - IEC 62714"@en ;
+                             void:vocabulary rdf:, foaf:, xsd:, rdfs: , skos: , xml:, dc: , terms:, <https://w3id.org/i40/aml#>;
+                             skos:prefLabel "aml" @en;
+							 dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en ;
                              vann:preferredNamespacePrefix "aml" ;
                              skos:altLabel "Alternative label for an AML object"@en ;
-                             void:vocabulary terms: ;
                              owl:versionInfo "0.1" ;
-                             void:vocabulary xsd: ;
-                             terms:license <http://creativecommons.org/licenses/by-nc-sa/2.0/> ;
+                             terms:license <http://creativecommons.org/licenses/by-nc-sa/3.0/> ;
                              terms:created "2016-03-23"^^xsd:date ;
-                             <http://usefulinc.com/ns/doap#repository> <https://github.com/i40-Tools/vocabularies/> ;
-                             void:vocabulary xml: ;
+                             <http://usefulinc.com/ns/doap#repository> <https://github.com/i40-Tools/AutomationMLOntology> ;
                              vann:preferredNamespaceUri "https://w3id.org/i40/aml/" ;
-                             void:vocabulary <https://w3id.org/i40/aml#> ;
                              rdfs:isDefinedBy <https://w3id.org/i40/aml#> ;
-                             skos:definition "A vocabulary to represents the AutomationML Standard - IEC 62714"@en .
+	.						 
 
 #################################################################
 #    Annotation properties
