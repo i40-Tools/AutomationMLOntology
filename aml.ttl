@@ -229,6 +229,10 @@ aml:hasAttributeSUC rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/i40/aml#hasBaseSystemUnitClass
 aml:hasBaseSystemUnitClass rdf:type owl:ObjectProperty ;
+						   rdfs:label "hasBaseSystemUnitClass"@en;
+						   skos:prefLabel "hasBaseSystemUnitClass"@en;
+						   skos:definition "Links Internal Elements with System Unit Classes"@en;
+						   rdfs:comment "Links Internal Elements with System Unit Classes"@en;
                            rdfs:domain aml:InternalElement ;
                            rdfs:range aml:SystemUnitClass .
 
@@ -239,7 +243,8 @@ aml:hasExternalInterface rdf:type owl:ObjectProperty ;
                          rdfs:range aml:ExternalInterface ;
                          rdfs:comment "Connects the Internal Element with an External Interface."@en ;
                          skos:definition "Connects the Internal Element with an External Interface."@en ;
-                         skos:prefLabel "hasExternalInterface"@en .
+                         skos:prefLabel "hasExternalInterface"@en ;
+                         rdfs:label "hasExternalInterface"@en .
 
 
 ###  https://w3id.org/i40/aml#hasExternalReference
@@ -248,6 +253,8 @@ aml:hasExternalReference rdf:type owl:ObjectProperty ;
                          rdfs:range aml:ExternalReference ;
                          rdfs:comment "A CAEX File contains external references." ;
                          skos:definition "A CAEX File contains external references." ;
+                         rdfs:comment "A CAEX File contains external references." ;
+                         rdfs:label "hasExternalReference"@en ;
                          skos:prefLabel "hasExternalReference"@en .
 
 
@@ -258,21 +265,27 @@ aml:hasInstanceHierarchy rdf:type owl:ObjectProperty ;
                          rdfs:range aml:InstanceHierarchy ;
                          rdfs:comment "Points to the CAEX file to the Instance Hierarchy."@en ;
                          skos:definition "Points to the CAEX file to the Instance Hierarchy."@en ;
-                         skos:prefLabel "hasInstanceHierarchy"@en .
+                         skos:prefLabel "hasInstanceHierarchy"@en ;
+                         rdfs:label "hasInstanceHierarchy"@en .
 
 
 ###  https://w3id.org/i40/aml#hasInterface
 aml:hasInterface rdf:type owl:ObjectProperty ;
-                 rdfs:range aml:InterfaceClass .
+                 rdfs:range aml:InterfaceClass ;
+				 rdfs:label "hasInterface"@en;
+				 skos:prefLabel "hasInterface"@en;
+				 skos:definition "Superproperty to link elements to Interface Classes"@en;
+				 rdfs:comment "Superproperty to link elements to Interface Classes"@en.
 
 
 ###  https://w3id.org/i40/aml#hasInterfaceClass
 aml:hasInterfaceClass rdf:type owl:ObjectProperty ;
                       rdfs:domain aml:InterfaceClassLib ;
                       rdfs:range aml:InterfaceClass ;
-                      rdfs:comment "Model the relation between Interface Class Lib and Interface Class."@en ;
-                      skos:definition "Model the relation between Interface Class Lib and Interface Class."@en ;
-                      skos:prefLabel "hasInterfaceClass"@en .
+                      rdfs:comment "Models the relation between Interface Class Lib and Interface Class."@en ;
+                      skos:definition "Models the relation between Interface Class Lib and Interface Class."@en ;
+                      skos:prefLabel "hasInterfaceClass"@en ;
+                      rdfs:label "hasInterfaceClass"@en .
 
 
 ###  https://w3id.org/i40/aml#hasInterfaceClassLib
@@ -282,28 +295,40 @@ aml:hasInterfaceClassLib rdf:type owl:ObjectProperty ;
                          rdfs:range aml:InterfaceClassLib ;
                          rdfs:comment "Points to the CAEX file to the InterfaceClassLib."@en ;
                          skos:definition "Points to the CAEX file to the InterfaceClassLib."@en ;
-                         skos:prefLabel "hasInterfaceClassLib"@en .
+                         skos:prefLabel "hasInterfaceClassLib"@en ;
+                         rdfs:label "hasInterfaceClassLib"@en .
 
 
 ###  https://w3id.org/i40/aml#hasInterfaceIE
 aml:hasInterfaceIE rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aml:hasInterface ;
                    rdfs:domain aml:InternalElement ;
-                   rdfs:range aml:InterfaceClass .
+                   rdfs:range aml:InterfaceClass ;
+				   rdfs:label "hasInterfaceIE"@en;
+				   skos:prefLabel "hasInterfaceIE"@en;
+				   skos:definition "Connects Internal Elements with Interface Classes"@en.
 
 
 ###  https://w3id.org/i40/aml#hasInterfaceRC
 aml:hasInterfaceRC rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aml:hasInterface ;
                    rdfs:domain aml:RoleClass ;
-                   rdfs:range aml:InterfaceClass .
+                   rdfs:range aml:InterfaceClass ;
+				   rdfs:label "hasInterfaceRC"@en;
+				   skos:prefLabel "hasInterfaceRC"@en;
+				   rdfs:commment "Connects Role Classes with Interface Classes"@en;
+				   skos:definition "Connects Role Classes with Interface Classes"@en.
 
 
 ###  https://w3id.org/i40/aml#hasInterfaceSUC
 aml:hasInterfaceSUC rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf aml:hasInterface ;
                     rdfs:domain aml:SystemUnitClass ;
-                    rdfs:range aml:InterfaceClass .
+                    rdfs:range aml:InterfaceClass ;
+					rdfs:label "hasInterfaceSUC"@en;
+				    skos:prefLabel "hasInterfaceSUC"@en;
+				    rdfs:commment "Connects System Unit Classes with Interface Classes"@en;
+				    skos:definition "Connects System Unit Classes with Interface Classes"@en.
 
 
 ###  https://w3id.org/i40/aml#hasInternalElement
