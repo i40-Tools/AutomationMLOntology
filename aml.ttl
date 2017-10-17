@@ -158,18 +158,26 @@ aml:contains rdf:type owl:ObjectProperty ;
              rdfs:domain aml:CAEXFile ;
              rdfs:comment "Superproperty to describe the connection of the CAEX file with the main CAEX library elements, e.g., InterfaceClassLib, RoleClassLib, and SystemUnitClassLib."@en ;
              skos:definition "Superproperty to describe the connection of the CAEX file with the main CAEX library elements, e.g., InterfaceClassLib, RoleClassLib, and SystemUnitClassLib."@en ;
+             rdfs:label "contains"@en ;
              skos:prefLabel "contains"@en .
 
 
 ###  https://w3id.org/i40/aml#hasAdditionalInformation
 aml:hasAdditionalInformation rdf:type owl:ObjectProperty ;
+                             rdfs:comment "Connect the CAEXFile with the Additional information concept"@en;
+                             skos:definition "Connect the CAEXFile with the Additional information concept"@en;
                              rdfs:domain aml:CAEXFile ;
                              rdfs:range aml:AdditionalInformation ;
+                             rdfs:label "hasAdditionalInformation"@en ;
                              skos:prefLabel "hasAdditionalInformation"@en .
 
 
 ###  https://w3id.org/i40/aml#hasAttribute
 aml:hasAttribute rdf:type owl:ObjectProperty ;
+                 rdfs:label "hasAttribute"@en;
+                 skos:prefLabel "hasAttribute"@en;
+				 rdfs:comment "General property to describe the relation of the CAEX components with Attributes"@en;
+				 skos:definition "General property to describe the relation of the CAEX components with Attributes"@en;
                  rdfs:domain owl:Thing ;
                  rdfs:range aml:Attribute ;
                  skos:prefLabel "hasAttribute"@en .
@@ -178,6 +186,10 @@ aml:hasAttribute rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/i40/aml#hasAttributeIC
 aml:hasAttributeIC rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aml:hasAttribute ;
+				   rdfs:label "hasAttributeIC"@en;
+				   skos:prefLabel "hasAttributeIC"@en;
+				   skos:definition "Connects the Interface Class with Attributes"@en;
+				   rdfs:comment "Connects the Interface Class with Attributes"@en;
                    rdfs:domain aml:InterfaceClass ;
                    rdfs:range aml:Attribute .
 
@@ -185,6 +197,10 @@ aml:hasAttributeIC rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/i40/aml#hasAttributeIE
 aml:hasAttributeIE rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aml:hasAttribute ;
+				   rdfs:label "hasAttributeIE"@en;
+				   skos:prefLabel "hasAttributeIE"@en;
+				   skos:definition "Connects the Internal Elements with Attributes"@en;
+				   rdfs:comment "Connects the Internal Elements with Attributes"@en;
                    rdfs:domain aml:InternalElement ;
                    rdfs:range aml:Attribute .
 
@@ -192,6 +208,10 @@ aml:hasAttributeIE rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/i40/aml#hasAttributeRC
 aml:hasAttributeRC rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aml:hasAttribute ;
+				   rdfs:label "hasAttributeRC"@en;
+				   skos:prefLabel "hasAttributeRC"@en;
+				   skos:definition "Connects Role Classes with Attributes"@en;
+				   rdfs:comment "Connects Role Classes with Attributes"@en;
                    rdfs:domain aml:RoleClass ;
                    rdfs:range aml:Attribute .
 
@@ -199,6 +219,10 @@ aml:hasAttributeRC rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/i40/aml#hasAttributeSUC
 aml:hasAttributeSUC rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf aml:hasAttribute ;
+					rdfs:label "hasAttributeSUC"@en;
+				    skos:prefLabel "hasAttributeSUC"@en;
+				    skos:definition "Connects System Unit Classes with Attributes"@en;
+				    rdfs:comment "Connects System Unit Classes with Attributes"@en;
                     rdfs:domain aml:SystemUnitClass ;
                     rdfs:range aml:Attribute .
 
