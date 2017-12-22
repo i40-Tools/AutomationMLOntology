@@ -972,7 +972,8 @@ om:Measure rdf:type owl:Class .
 
 
 ###  http://www.wurvoc.org/vocabularies/om-1.8/Speed
-om:Speed rdf:type owl:Class .
+om:Speed rdf:type owl:Class ;
+         rdfs:subClassOf aml:Attribute .
 
 
 ###  http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure
@@ -1028,7 +1029,8 @@ aml:Communication rdf:type owl:Class ;
 
 ###  https://w3id.org/i40/aml#ComponentPartByManufacturer1
 aml:ComponentPartByManufacturer1 rdf:type owl:Class ;
-                                 rdfs:subClassOf aml:SystemUnitClass .
+                                 rdfs:subClassOf aml:SystemUnitClass ;
+                                 rdfs:label "ComponentPartByManufacturer1"@en .
 
 
 ###  https://w3id.org/i40/aml#Conveyor
@@ -1245,9 +1247,18 @@ aml:eClassSpecification rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  https://w3id.org/i40/aml#at_Speed_ConveyorBand_B
+aml:at_Speed_ConveyorBand_B rdf:type owl:NamedIndividual ,
+                                     om:Speed ;
+                            rdfs:comment "Instance to represent the speed of the Conveyor Band Type B"@en ;
+                            rdfs:label "at_Speed_ConveyorBand_B"@en .
+
+
 ###  https://w3id.org/i40/aml#at_Weight_Motor
 aml:at_Weight_Motor rdf:type owl:NamedIndividual ,
-                             aml:Weight .
+                             aml:Weight ;
+                    rdfs:comment "Class to represent Speed Attributes"@en ;
+                    rdfs:label "Speed"@en .
 
 
 ###  https://w3id.org/i40/aml#myConveyorBand
@@ -1303,7 +1314,7 @@ aml:ss_Conveyor rdf:type owl:NamedIndividual ,
 aml:ss_ConveyorBand_TypeB rdf:type owl:NamedIndividual ,
                                    aml:ConveyorBandTypeB ;
                           aml:hasSupportedRoleClass aml:rc_Band ;
-                          rdfs:label "SensorTypeA"@en .
+                          rdfs:label "ss_ConveyorBand_TypeB"@en .
 
 
 ###  https://w3id.org/i40/aml#ss_Frame_TypeB
