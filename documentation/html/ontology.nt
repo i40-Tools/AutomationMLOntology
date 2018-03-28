@@ -1,0 +1,924 @@
+<https://w3id.org/i40/aml#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/i40/aml#> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en .
+<https://w3id.org/i40/aml#> <http://purl.org/dc/terms/contributor> <https://www.linkedin.com/in/marta-sabou-0b310a1/> .
+<https://w3id.org/i40/aml#> <http://purl.org/dc/terms/contributor> <https://www.linkedin.com/in/soerenauer/> .
+<https://w3id.org/i40/aml#> <http://purl.org/dc/terms/created> "2016-03-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/i40/aml#> <http://purl.org/dc/terms/creator> <http://sda.cs.uni-bonn.de/people/irlan-grangel-gonzalez/> .
+<https://w3id.org/i40/aml#> <http://purl.org/dc/terms/creator> <https://at.linkedin.com/in/olga-kovalenko-979552108/> .
+<https://w3id.org/i40/aml#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+<https://w3id.org/i40/aml#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aml" .
+<https://w3id.org/i40/aml#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/i40/aml/" .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/dc/elements/1.1/> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/dc/terms/> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2000/01/rdf-schema#> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2001/XMLSchema#> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2004/02/skos/core#> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/XML/1998/namespace> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <http://xmlns.com/foaf/spec/> .
+<https://w3id.org/i40/aml#> <http://rdfs.org/ns/void#vocabulary> <https://w3id.org/i40/aml#> .
+<https://w3id.org/i40/aml#> <http://usefulinc.com/ns/doap#repository> <https://github.com/i40-Tools/AutomationMLOntology> .
+<https://w3id.org/i40/aml#> <http://www.w3.org/2000/01/rdf-schema#comment> "A Vocabulary to represent the AutomationML Standard - IEC 62714"@en .
+<https://w3id.org/i40/aml#> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/i40/aml#> .
+<https://w3id.org/i40/aml#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+<https://w3id.org/i40/aml#> <http://www.w3.org/2004/02/skos/core#altLabel> "Alternative label for an AML object"@en .
+<https://w3id.org/i40/aml#> <http://www.w3.org/2004/02/skos/core#definition> "An Ontology to represent the AutomationML Standard - IEC 62714"@en .
+<https://w3id.org/i40/aml#> <http://www.w3.org/2004/02/skos/core#prefLabel> "aml"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdfs.org/ns/void#vocabulary
+<http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/affiliation
+<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#repository
+<http://usefulinc.com/ns/doap#repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#commment
+<http://www.w3.org/2000/01/rdf-schema#commment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#anyURI
+<http://www.w3.org/2001/XMLSchema#anyURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#dateTime
+<http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#decimal
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#integer
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#string
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/cp/owl/partof.owl" .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/ns/prov#wasGeneratedBy" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/phenomenon
+<http://www.wurvoc.org/vocabularies/om-1.8/phenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure
+<http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/i40/aml#contains
+<https://w3id.org/i40/aml#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#contains> <http://www.w3.org/2004/02/skos/core#definition> "Superproperty to describe the connection of the CAEX file with the main CAEX library elements, e.g., InterfaceClassLib, RoleClassLib, and SystemUnitClassLib."@en .
+<https://w3id.org/i40/aml#contains> <http://www.w3.org/2004/02/skos/core#prefLabel> "contains"@en .
+# 
+# https://w3id.org/i40/aml#hasAdditionalInformation
+<https://w3id.org/i40/aml#hasAdditionalInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasAdditionalInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasAdditionalInformation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasAdditionalInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasAdditionalInformation"@en .
+<https://w3id.org/i40/aml#hasAdditionalInformation> <http://www.w3.org/2004/02/skos/core#definition> "Connect the CAEXFile with the Additional information concept"@en .
+<https://w3id.org/i40/aml#hasAdditionalInformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAdditionalInformation"@en .
+# 
+# https://w3id.org/i40/aml#hasAttribute
+<https://w3id.org/i40/aml#hasAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/i40/aml#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "hasAttribute"@en .
+<https://w3id.org/i40/aml#hasAttribute> <http://www.w3.org/2004/02/skos/core#definition> "General property to describe the relation of the CAEX components with Attributes"@en .
+<https://w3id.org/i40/aml#hasAttribute> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttribute"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeIC
+<https://w3id.org/i40/aml#hasAttributeIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasAttributeIC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasAttribute> .
+<https://w3id.org/i40/aml#hasAttributeIC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasAttributeIC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeIC> <http://www.w3.org/2000/01/rdf-schema#label> "hasAttributeIC"@en .
+<https://w3id.org/i40/aml#hasAttributeIC> <http://www.w3.org/2004/02/skos/core#definition> "Connects the Interface Class with Attributes"@en .
+<https://w3id.org/i40/aml#hasAttributeIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttributeIC"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeIE
+<https://w3id.org/i40/aml#hasAttributeIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasAttributeIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasAttribute> .
+<https://w3id.org/i40/aml#hasAttributeIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasAttributeIE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeIE> <http://www.w3.org/2000/01/rdf-schema#label> "hasAttributeIE"@en .
+<https://w3id.org/i40/aml#hasAttributeIE> <http://www.w3.org/2004/02/skos/core#definition> "Connects the Internal Elements with Attributes"@en .
+<https://w3id.org/i40/aml#hasAttributeIE> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttributeIE"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeRC
+<https://w3id.org/i40/aml#hasAttributeRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasAttributeRC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasAttribute> .
+<https://w3id.org/i40/aml#hasAttributeRC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasAttributeRC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeRC> <http://www.w3.org/2000/01/rdf-schema#label> "hasAttributeRC"@en .
+<https://w3id.org/i40/aml#hasAttributeRC> <http://www.w3.org/2004/02/skos/core#definition> "Connects Role Classes with Attributes"@en .
+<https://w3id.org/i40/aml#hasAttributeRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttributeRC"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeSUC
+<https://w3id.org/i40/aml#hasAttributeSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasAttributeSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasAttribute> .
+<https://w3id.org/i40/aml#hasAttributeSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasAttributeSUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeSUC> <http://www.w3.org/2000/01/rdf-schema#label> "hasAttributeSUC"@en .
+<https://w3id.org/i40/aml#hasAttributeSUC> <http://www.w3.org/2004/02/skos/core#definition> "Connects System Unit Classes with Attributes"@en .
+<https://w3id.org/i40/aml#hasAttributeSUC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttributeSUC"@en .
+# 
+# https://w3id.org/i40/aml#hasBaseSystemUnitClass
+<https://w3id.org/i40/aml#hasBaseSystemUnitClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasBaseSystemUnitClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasBaseSystemUnitClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasBaseSystemUnitClass> <http://www.w3.org/2000/01/rdf-schema#label> "hasBaseSystemUnitClass"@en .
+<https://w3id.org/i40/aml#hasBaseSystemUnitClass> <http://www.w3.org/2004/02/skos/core#definition> "Links Internal Elements with System Unit Classes"@en .
+<https://w3id.org/i40/aml#hasBaseSystemUnitClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasBaseSystemUnitClass"@en .
+# 
+# https://w3id.org/i40/aml#hasExternalReference
+<https://w3id.org/i40/aml#hasExternalReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasExternalReference> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasExternalReference> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#ExternalReference> .
+<https://w3id.org/i40/aml#hasExternalReference> <http://www.w3.org/2000/01/rdf-schema#label> "hasExternalReference"@en .
+<https://w3id.org/i40/aml#hasExternalReference> <http://www.w3.org/2004/02/skos/core#definition> "A CAEX File contains external references." .
+<https://w3id.org/i40/aml#hasExternalReference> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasExternalReference"@en .
+# 
+# https://w3id.org/i40/aml#hasInstanceHierarchy
+<https://w3id.org/i40/aml#hasInstanceHierarchy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInstanceHierarchy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#contains> .
+<https://w3id.org/i40/aml#hasInstanceHierarchy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasInstanceHierarchy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InstanceHierarchy> .
+<https://w3id.org/i40/aml#hasInstanceHierarchy> <http://www.w3.org/2000/01/rdf-schema#label> "hasInstanceHierarchy"@en .
+<https://w3id.org/i40/aml#hasInstanceHierarchy> <http://www.w3.org/2004/02/skos/core#definition> "Points to the CAEX file to the Instance Hierarchy."@en .
+<https://w3id.org/i40/aml#hasInstanceHierarchy> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInstanceHierarchy"@en .
+# 
+# https://w3id.org/i40/aml#hasInterface
+<https://w3id.org/i40/aml#hasInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInterface> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasInterface> <http://www.w3.org/2000/01/rdf-schema#label> "hasInterface"@en .
+<https://w3id.org/i40/aml#hasInterface> <http://www.w3.org/2004/02/skos/core#definition> "Superproperty to link elements to Interface Classes"@en .
+<https://w3id.org/i40/aml#hasInterface> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInterface"@en .
+# 
+# https://w3id.org/i40/aml#hasInterfaceClass
+<https://w3id.org/i40/aml#hasInterfaceClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInterfaceClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InterfaceClassLib> .
+<https://w3id.org/i40/aml#hasInterfaceClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasInterfaceClass> <http://www.w3.org/2000/01/rdf-schema#label> "hasInterfaceClass"@en .
+<https://w3id.org/i40/aml#hasInterfaceClass> <http://www.w3.org/2004/02/skos/core#definition> "Models the relation between Interface Class Lib and Interface Class."@en .
+<https://w3id.org/i40/aml#hasInterfaceClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInterfaceClass"@en .
+# 
+# https://w3id.org/i40/aml#hasInterfaceClassLib
+<https://w3id.org/i40/aml#hasInterfaceClassLib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInterfaceClassLib> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#contains> .
+<https://w3id.org/i40/aml#hasInterfaceClassLib> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasInterfaceClassLib> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InterfaceClassLib> .
+<https://w3id.org/i40/aml#hasInterfaceClassLib> <http://www.w3.org/2000/01/rdf-schema#label> "hasInterfaceClassLib"@en .
+<https://w3id.org/i40/aml#hasInterfaceClassLib> <http://www.w3.org/2004/02/skos/core#definition> "Points to the CAEX file to the InterfaceClassLib."@en .
+<https://w3id.org/i40/aml#hasInterfaceClassLib> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInterfaceClassLib"@en .
+# 
+# https://w3id.org/i40/aml#hasInterfaceIE
+<https://w3id.org/i40/aml#hasInterfaceIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInterfaceIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasInterface> .
+<https://w3id.org/i40/aml#hasInterfaceIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasInterfaceIE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasInterfaceIE> <http://www.w3.org/2000/01/rdf-schema#label> "hasInterfaceIE"@en .
+<https://w3id.org/i40/aml#hasInterfaceIE> <http://www.w3.org/2004/02/skos/core#definition> "Connects Internal Elements with Interface Classes"@en .
+<https://w3id.org/i40/aml#hasInterfaceIE> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInterfaceIE"@en .
+# 
+# https://w3id.org/i40/aml#hasInterfaceRC
+<https://w3id.org/i40/aml#hasInterfaceRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInterfaceRC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasInterface> .
+<https://w3id.org/i40/aml#hasInterfaceRC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasInterfaceRC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasInterfaceRC> <http://www.w3.org/2000/01/rdf-schema#label> "hasInterfaceRC"@en .
+<https://w3id.org/i40/aml#hasInterfaceRC> <http://www.w3.org/2004/02/skos/core#definition> "Connects Role Classes with Interface Classes"@en .
+<https://w3id.org/i40/aml#hasInterfaceRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInterfaceRC"@en .
+# 
+# https://w3id.org/i40/aml#hasInterfaceSUC
+<https://w3id.org/i40/aml#hasInterfaceSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInterfaceSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasInterface> .
+<https://w3id.org/i40/aml#hasInterfaceSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasInterfaceSUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasInterfaceSUC> <http://www.w3.org/2000/01/rdf-schema#label> "hasInterfaceSUC"@en .
+<https://w3id.org/i40/aml#hasInterfaceSUC> <http://www.w3.org/2004/02/skos/core#definition> "Connects System Unit Classes with Interface Classes"@en .
+<https://w3id.org/i40/aml#hasInterfaceSUC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInterfaceSUC"@en .
+# 
+# https://w3id.org/i40/aml#hasInternalElement
+<https://w3id.org/i40/aml#hasInternalElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasInternalElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InstanceHierarchy> .
+<https://w3id.org/i40/aml#hasInternalElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasInternalElement> <http://www.w3.org/2004/02/skos/core#definition> "Hierarchy has many internal elements."@en .
+<https://w3id.org/i40/aml#hasInternalElement> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInternalElement"@en .
+# 
+# https://w3id.org/i40/aml#hasPart
+<https://w3id.org/i40/aml#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+# 
+# https://w3id.org/i40/aml#hasPartIE
+<https://w3id.org/i40/aml#hasPartIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasPartIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasPart> .
+<https://w3id.org/i40/aml#hasPartIE> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/i40/aml#isPartOfIE> .
+<https://w3id.org/i40/aml#hasPartIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/i40/aml#hasPartIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasPartIE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InternalElement> .
+# 
+# https://w3id.org/i40/aml#hasPartSUC
+<https://w3id.org/i40/aml#hasPartSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasPartSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasPart> .
+<https://w3id.org/i40/aml#hasPartSUC> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/i40/aml#isPartOfSUC> .
+<https://w3id.org/i40/aml#hasPartSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/i40/aml#hasPartSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasPartSUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClass> .
+# 
+# https://w3id.org/i40/aml#hasProject
+<https://w3id.org/i40/aml#hasProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasProject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasProject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#Project> .
+<https://w3id.org/i40/aml#hasProject> <http://www.w3.org/2004/02/skos/core#definition> "Related Project for the CAEX File."@en .
+<https://w3id.org/i40/aml#hasProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasProject"@en .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideA_Interface
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Interface> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Interface> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#ExternalInterface> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Interface> <http://www.w3.org/2004/02/skos/core#definition> "Reference an Internal Link with an element A."@en .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Interface> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasRefPartnerSideA"@en .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideA_Object
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideA_Object_IE
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_IE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_IE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRefPartnerSideA_Object> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_IE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_IE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InternalElement> .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideA_Object_SUC
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_SUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_SUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRefPartnerSideA_Object> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_SUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+<https://w3id.org/i40/aml#hasRefPartnerSideA_Object_SUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClass> .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideB_Interface
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Interface> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Interface> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#ExternalInterface> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Interface> <http://www.w3.org/2004/02/skos/core#definition> "Reference an Internal Link with an element B."@en .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Interface> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasRefPartnerSideB"@en .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideB_Object
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideB_Object_IE
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_IE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_IE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRefPartnerSideB_Object> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_IE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_IE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClass> .
+# 
+# https://w3id.org/i40/aml#hasRefPartnerSideB_Object_SUC
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_SUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_SUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRefPartnerSideB_Object> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_SUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalLink> .
+<https://w3id.org/i40/aml#hasRefPartnerSideB_Object_SUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClass> .
+# 
+# https://w3id.org/i40/aml#hasRefSemAttribute
+<https://w3id.org/i40/aml#hasRefSemAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefSemAttribute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasSemanticRef> .
+<https://w3id.org/i40/aml#hasRefSemAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasRefSemAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#eClassSpecification> .
+# 
+# https://w3id.org/i40/aml#hasRefSemRC
+<https://w3id.org/i40/aml#hasRefSemRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRefSemRC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasSemanticRef> .
+<https://w3id.org/i40/aml#hasRefSemRC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasRefSemRC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#eClassSpecification> .
+<https://w3id.org/i40/aml#hasRefSemRC> <http://www.w3.org/2004/02/skos/core#altLabel> "RoleClasseClassReference"@en .
+<https://w3id.org/i40/aml#hasRefSemRC> <http://www.w3.org/2004/02/skos/core#definition> "A Role Class points to its ID according to eClass"@en .
+<https://w3id.org/i40/aml#hasRefSemRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "eClassRCReference" .
+# 
+# https://w3id.org/i40/aml#hasRoleClass
+<https://w3id.org/i40/aml#hasRoleClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRoleClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClassLib> .
+<https://w3id.org/i40/aml#hasRoleClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasRoleClass> <http://www.w3.org/2004/02/skos/core#definition> "A Role Class lib contains a Role Class"@en .
+<https://w3id.org/i40/aml#hasRoleClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasRoleClass"@en .
+# 
+# https://w3id.org/i40/aml#hasRoleClassLib
+<https://w3id.org/i40/aml#hasRoleClassLib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRoleClassLib> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#contains> .
+<https://w3id.org/i40/aml#hasRoleClassLib> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasRoleClassLib> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClassLib> .
+<https://w3id.org/i40/aml#hasRoleClassLib> <http://www.w3.org/2004/02/skos/core#definition> "Points the CAEX file to the RoleClassLib"@en .
+<https://w3id.org/i40/aml#hasRoleClassLib> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasRoleClassLib"@en .
+# 
+# https://w3id.org/i40/aml#hasRoleRequeriment
+<https://w3id.org/i40/aml#hasRoleRequeriment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRoleRequeriment> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasRoleRequeriment> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasRoleRequeriment"@en .
+# 
+# https://w3id.org/i40/aml#hasRoleRequirementIE
+<https://w3id.org/i40/aml#hasRoleRequirementIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRoleRequirementIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRoleRequeriment> .
+<https://w3id.org/i40/aml#hasRoleRequirementIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasRoleRequirementIE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClass> .
+# 
+# https://w3id.org/i40/aml#hasRoleRequirementSUC
+<https://w3id.org/i40/aml#hasRoleRequirementSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasRoleRequirementSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRoleRequeriment> .
+<https://w3id.org/i40/aml#hasRoleRequirementSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasRoleRequirementSUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClass> .
+# 
+# https://w3id.org/i40/aml#hasSemanticRef
+<https://w3id.org/i40/aml#hasSemanticRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasSemanticRef> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#ExternalStandard> .
+<https://w3id.org/i40/aml#hasSemanticRef> <http://www.w3.org/2004/02/skos/core#definition> "General property which points to an external standard to provide semantic identification for a given element."@en .
+<https://w3id.org/i40/aml#hasSemanticRef> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasSemanticRef"@en .
+# 
+# https://w3id.org/i40/aml#hasSupportedRoleClass
+<https://w3id.org/i40/aml#hasSupportedRoleClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasSupportedRoleClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasSupportedRoleClass> <http://www.w3.org/2004/02/skos/core#definition> "Internal elements has Supported Role Class"@en .
+<https://w3id.org/i40/aml#hasSupportedRoleClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "supportedRoleClass"@en .
+# 
+# https://w3id.org/i40/aml#hasSupportedRoleClassIE
+<https://w3id.org/i40/aml#hasSupportedRoleClassIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasSupportedRoleClassIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasSupportedRoleClass> .
+<https://w3id.org/i40/aml#hasSupportedRoleClassIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasSupportedRoleClassIE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClass> .
+# 
+# https://w3id.org/i40/aml#hasSupportedRoleClassSUC
+<https://w3id.org/i40/aml#hasSupportedRoleClassSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasSupportedRoleClassSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasSupportedRoleClass> .
+<https://w3id.org/i40/aml#hasSupportedRoleClassSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasSupportedRoleClassSUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#RoleClass> .
+# 
+# https://w3id.org/i40/aml#hasSystemUnitClass
+<https://w3id.org/i40/aml#hasSystemUnitClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasSystemUnitClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClassLib> .
+<https://w3id.org/i40/aml#hasSystemUnitClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasSystemUnitClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasSystemUnitClass" .
+# 
+# https://w3id.org/i40/aml#hasSystemUnitClassLib
+<https://w3id.org/i40/aml#hasSystemUnitClassLib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasSystemUnitClassLib> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#contains> .
+<https://w3id.org/i40/aml#hasSystemUnitClassLib> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasSystemUnitClassLib> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClassLib> .
+<https://w3id.org/i40/aml#hasSystemUnitClassLib> <http://www.w3.org/2004/02/skos/core#definition> "Points to the CAEX file to the SystemUnitClassLib."@en .
+<https://w3id.org/i40/aml#hasSystemUnitClassLib> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasInterfaceClassLib"@en .
+# 
+# https://w3id.org/i40/aml#hasUnit
+<https://w3id.org/i40/aml#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure> .
+# 
+# https://w3id.org/i40/aml#hasUnitValue
+<https://w3id.org/i40/aml#hasUnitValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#hasUnitValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasUnitValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.wurvoc.org/vocabularies/om-1.8/Measure> .
+<https://w3id.org/i40/aml#hasUnitValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttributeValue"@en .
+# 
+# https://w3id.org/i40/aml#isConnectedToEClass
+<https://w3id.org/i40/aml#isConnectedToEClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#isConnectedToEClass> <http://www.w3.org/2004/02/skos/core#definition> "Points to the eCl@ass connection for a given element"@en .
+<https://w3id.org/i40/aml#isConnectedToEClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "eClassIsConnectedTo"@en .
+# 
+# https://w3id.org/i40/aml#isPartOfIE
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> .
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/2004/02/skos/core#altLabel> "InternalElementPartOf"@en .
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/2004/02/skos/core#definition> "Connects the Internal Element with other Internal Elements that are part of the given Internal Element"@en .
+<https://w3id.org/i40/aml#isPartOfIE> <http://www.w3.org/2004/02/skos/core#prefLabel> "isPartOfIE"@en .
+# 
+# https://w3id.org/i40/aml#isPartOfSUC
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> .
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/2004/02/skos/core#altLabel> "SystemUnitClassPartOf"@en .
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/2004/02/skos/core#definition> "Connects the System Unit Class with another System Unit Class Elements"@en .
+<https://w3id.org/i40/aml#isPartOfSUC> <http://www.w3.org/2004/02/skos/core#prefLabel> "isPartOfSUC"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/numerical_value
+<http://www.wurvoc.org/vocabularies/om-1.8/numerical_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/i40/aml#hasAMLVersion
+<https://w3id.org/i40/aml#hasAMLVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasAMLVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasAMLVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/i40/aml#hasAMLVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAMLVersion"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeDataType
+<https://w3id.org/i40/aml#hasAttributeDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasAttributeDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasAttributeDataType> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasDataType"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeDescription
+<https://w3id.org/i40/aml#hasAttributeDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasAttributeDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasAttributeDescription> <http://www.w3.org/2004/02/skos/core#definition> "Points to an optional description of the Attribute"@en .
+<https://w3id.org/i40/aml#hasAttributeDescription> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasDescription"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeName
+<https://w3id.org/i40/aml#hasAttributeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasAttributeName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasAttributeName> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttributeName"@en .
+# 
+# https://w3id.org/i40/aml#hasAttributeValue
+<https://w3id.org/i40/aml#hasAttributeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasAttributeValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasAttributeValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasAttributeValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAttributeValue"@en .
+# 
+# https://w3id.org/i40/aml#hasClassificationClass
+<https://w3id.org/i40/aml#hasClassificationClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasClassificationClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#eClassSpecification> .
+<https://w3id.org/i40/aml#hasClassificationClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasClassificationClass> <http://www.w3.org/2004/02/skos/core#definition> "Points to the eClass classification Class a given Element"@en .
+<https://w3id.org/i40/aml#hasClassificationClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "eClassClassificationClass"@en .
+# 
+# https://w3id.org/i40/aml#hasExternalReferenceAlias
+<https://w3id.org/i40/aml#hasExternalReferenceAlias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasExternalReferenceAlias> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#ExternalReference> .
+<https://w3id.org/i40/aml#hasExternalReferenceAlias> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasExternalReferenceAlias> <http://www.w3.org/2004/02/skos/core#definition> "A external Reference of a CAEX File has Alias" .
+<https://w3id.org/i40/aml#hasExternalReferenceAlias> <http://www.w3.org/2004/02/skos/core#prefLabel> "externalReferenceAlias"@en .
+# 
+# https://w3id.org/i40/aml#hasExternalReferencePath
+<https://w3id.org/i40/aml#hasExternalReferencePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasExternalReferencePath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#ExternalReference> .
+<https://w3id.org/i40/aml#hasExternalReferencePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasExternalReferencePath> <http://www.w3.org/2004/02/skos/core#definition> "A external Reference of a CAEX File contains path to the file" .
+<https://w3id.org/i40/aml#hasExternalReferencePath> <http://www.w3.org/2004/02/skos/core#prefLabel> "externalReferencePath"@en .
+# 
+# https://w3id.org/i40/aml#hasICID
+<https://w3id.org/i40/aml#hasICID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasICID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+<https://w3id.org/i40/aml#hasICID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasICID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasICID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasICID> <http://www.w3.org/2004/02/skos/core#definition> "Unique ID for the Interface Class"@en .
+<https://w3id.org/i40/aml#hasICID> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasICID"@en .
+# 
+# https://w3id.org/i40/aml#hasIDIE
+<https://w3id.org/i40/aml#hasIDIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasIDIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+<https://w3id.org/i40/aml#hasIDIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasIDIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasIDIE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasIDIE> <http://www.w3.org/2004/02/skos/core#definition> "Unique Identification of an Internal Element"@en .
+<https://w3id.org/i40/aml#hasIDIE> <http://www.w3.org/2004/02/skos/core#prefLabel> "internalElementId"@en .
+# 
+# https://w3id.org/i40/aml#hasIRDIeClass
+<https://w3id.org/i40/aml#hasIRDIeClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasIRDIeClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasIRDIeClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#eClassSpecification> .
+<https://w3id.org/i40/aml#hasIRDIeClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasIRDIeClass> <http://www.w3.org/2004/02/skos/core#definition> "Points to the eClass unique identification(IRDI) a given Element"@en .
+<https://w3id.org/i40/aml#hasIRDIeClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "eClassIRDI"@en .
+# 
+# https://w3id.org/i40/aml#hasName
+<https://w3id.org/i40/aml#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasName> <http://www.w3.org/2004/02/skos/core#definition> "General property to define names in AutomationML"@en .
+<https://w3id.org/i40/aml#hasName> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasName"@en .
+# 
+# https://w3id.org/i40/aml#hasNameAttribute
+<https://w3id.org/i40/aml#hasNameAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasNameAttribute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasNameAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#hasNameAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasNameAttribute> <http://www.w3.org/2004/02/skos/core#definition> "Defines the name of the Attribute concept"@en .
+<https://w3id.org/i40/aml#hasNameAttribute> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNameAttribute"@en .
+# 
+# https://w3id.org/i40/aml#hasNameFile
+<https://w3id.org/i40/aml#hasNameFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasNameFile> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasNameFile> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasNameFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasNameFile> <http://www.w3.org/2004/02/skos/core#definition> "Defines the name of the main AutomationML File"@en .
+<https://w3id.org/i40/aml#hasNameFile> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNameFile" .
+# 
+# https://w3id.org/i40/aml#hasNameIC
+<https://w3id.org/i40/aml#hasNameIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasNameIC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasNameIC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasNameIC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasNameIC> <http://www.w3.org/2004/02/skos/core#altLabel> "hasInterfaceClassName"@en .
+<https://w3id.org/i40/aml#hasNameIC> <http://www.w3.org/2004/02/skos/core#definition> "Name of the Interface Class"@en .
+<https://w3id.org/i40/aml#hasNameIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNameIC"@en .
+# 
+# https://w3id.org/i40/aml#hasNameIE
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/2004/02/skos/core#altLabel> "hasInternalElementName"@en .
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/2004/02/skos/core#definition> "Name of an Internal Element"@en .
+<https://w3id.org/i40/aml#hasNameIE> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNameIE"@en .
+# 
+# https://w3id.org/i40/aml#hasNameIH
+<https://w3id.org/i40/aml#hasNameIH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasNameIH> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasNameIH> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InstanceHierarchy> .
+<https://w3id.org/i40/aml#hasNameIH> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasNameIH> <http://www.w3.org/2004/02/skos/core#altLabel> "hasInstanceHierarchyName"@en .
+<https://w3id.org/i40/aml#hasNameIH> <http://www.w3.org/2004/02/skos/core#definition> "Given Name of the Instance Hierarchy"@en .
+<https://w3id.org/i40/aml#hasNameIH> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNameIH"@en .
+# 
+# https://w3id.org/i40/aml#hasNameRC
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/2004/02/skos/core#altLabel> "hasRoleClassName"@en .
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/2004/02/skos/core#definition> "Name for a RoleClass"@en .
+<https://w3id.org/i40/aml#hasNameRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNameRC"@en .
+# 
+# https://w3id.org/i40/aml#hasNameSUC
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/2004/02/skos/core#altLabel> "hasSystemUnitClassName"@en .
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/2004/02/skos/core#definition> "Given Name of the System Unit Class"@en .
+<https://w3id.org/i40/aml#hasNameSUC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNameSUC"@en .
+# 
+# https://w3id.org/i40/aml#hasProjectId
+<https://w3id.org/i40/aml#hasProjectId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasProjectId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+<https://w3id.org/i40/aml#hasProjectId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/title> .
+<https://w3id.org/i40/aml#hasProjectId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Project> .
+<https://w3id.org/i40/aml#hasProjectId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasProjectId> <http://www.w3.org/2004/02/skos/core#definition> "Unique identification of a Project."@en .
+<https://w3id.org/i40/aml#hasProjectId> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasProjectTitle"@en .
+# 
+# https://w3id.org/i40/aml#hasProjectTitle
+<https://w3id.org/i40/aml#hasProjectTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasProjectTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/title> .
+<https://w3id.org/i40/aml#hasProjectTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Project> .
+<https://w3id.org/i40/aml#hasProjectTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasProjectTitle> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasProjectRelease"@en .
+<https://w3id.org/i40/aml#hasProjectTitle> <http://www.w3.org/2004/02/skos/core#prefLabel> "has Project Release" .
+# 
+# https://w3id.org/i40/aml#hasRefBaseClassPath
+<https://w3id.org/i40/aml#hasRefBaseClassPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasRefBaseClassPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#ExternalInterface> .
+<https://w3id.org/i40/aml#hasRefBaseClassPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasRefBaseClassPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClassLib> .
+<https://w3id.org/i40/aml#hasRefBaseClassPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasRefBaseClassPath> <http://www.w3.org/2004/02/skos/core#definition> "Stores the name of the parent class"@en .
+<https://w3id.org/i40/aml#hasRefBaseClassPath> <http://www.w3.org/2004/02/skos/core#prefLabel> "refBaseClassPath"@en .
+# 
+# https://w3id.org/i40/aml#hasRefBaseClassPathIC
+<https://w3id.org/i40/aml#hasRefBaseClassPathIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathIC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRefBaseClassPath> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathIC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathIC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# https://w3id.org/i40/aml#hasRefBaseClassPathRC
+<https://w3id.org/i40/aml#hasRefBaseClassPathRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathRC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRefBaseClassPath> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathRC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClass> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathRC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# https://w3id.org/i40/aml#hasRefBaseClassPathSUC
+<https://w3id.org/i40/aml#hasRefBaseClassPathSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasRefBaseClassPath> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasRefBaseClassPathSUC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# https://w3id.org/i40/aml#hasRefBaseRoleClassPath
+<https://w3id.org/i40/aml#hasRefBaseRoleClassPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasRefBaseRoleClassPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasRefBaseRoleClassPath> <http://www.w3.org/2004/02/skos/core#definition> "Points to the path of the Base RoleClass"@en .
+<https://w3id.org/i40/aml#hasRefBaseRoleClassPath> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasRefBaseRoleClassPath"@en .
+# 
+# https://w3id.org/i40/aml#hasRefBaseSystemUnitPath
+<https://w3id.org/i40/aml#hasRefBaseSystemUnitPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasRefBaseSystemUnitPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#hasRefBaseSystemUnitPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasRefBaseSystemUnitPath> <http://www.w3.org/2004/02/skos/core#altLabel> "Ref Base System Unit Path"@en .
+<https://w3id.org/i40/aml#hasRefBaseSystemUnitPath> <http://www.w3.org/2004/02/skos/core#prefLabel> "refBaseSUPath"@en .
+# 
+# https://w3id.org/i40/aml#hasRefRoleClassPath
+<https://w3id.org/i40/aml#hasRefRoleClassPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasRefRoleClassPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasRefRoleClassPath> <http://www.w3.org/2004/02/skos/core#altLabel> "refRoleClassPath"@en .
+<https://w3id.org/i40/aml#hasRefRoleClassPath> <http://www.w3.org/2004/02/skos/core#prefLabel> "refRCPath"@en .
+# 
+# https://w3id.org/i40/aml#hasSchemaVersion
+<https://w3id.org/i40/aml#hasSchemaVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasSchemaVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasVersion> .
+<https://w3id.org/i40/aml#hasSchemaVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasSchemaVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#CAEXFile> .
+<https://w3id.org/i40/aml#hasSchemaVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/i40/aml#hasSchemaVersion> <http://www.w3.org/2004/02/skos/core#definition> "Defines the version of the current CAEX schema"@en .
+<https://w3id.org/i40/aml#hasSchemaVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasSchemaVersion" .
+# 
+# https://w3id.org/i40/aml#hasVersion
+<https://w3id.org/i40/aml#hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/i40/aml#hasVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "General property to define versions of the AutomationML elements"@en .
+<https://w3id.org/i40/aml#hasVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasVersion"@en .
+# 
+# https://w3id.org/i40/aml#hasVersionEClass
+<https://w3id.org/i40/aml#hasVersionEClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasVersionEClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#eClassSpecification> .
+<https://w3id.org/i40/aml#hasVersionEClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasVersionEClass> <http://www.w3.org/2004/02/skos/core#definition> "Points to the eClass version for a given Element"@en .
+<https://w3id.org/i40/aml#hasVersionEClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "eClassVersion"@en .
+# 
+# https://w3id.org/i40/aml#hasVersionICL
+<https://w3id.org/i40/aml#hasVersionICL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasVersionICL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasVersion> .
+<https://w3id.org/i40/aml#hasVersionICL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InterfaceClassLib> .
+<https://w3id.org/i40/aml#hasVersionICL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasVersionICL> <http://www.w3.org/2004/02/skos/core#definition> "Points to the version for a Interface Class Lib"@en .
+<https://w3id.org/i40/aml#hasVersionICL> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasVersionICL"@en .
+# 
+# https://w3id.org/i40/aml#hasVersionRCL
+<https://w3id.org/i40/aml#hasVersionRCL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasVersionRCL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasVersion> .
+<https://w3id.org/i40/aml#hasVersionRCL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#RoleClassLib> .
+<https://w3id.org/i40/aml#hasVersionRCL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasVersionRCL> <http://www.w3.org/2004/02/skos/core#definition> "Points to the version for a Role Class Lib"@en .
+<https://w3id.org/i40/aml#hasVersionRCL> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasVersionRCL"@en .
+# 
+# https://w3id.org/i40/aml#hasVersionSUC
+<https://w3id.org/i40/aml#hasVersionSUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasVersionSUC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasVersion> .
+<https://w3id.org/i40/aml#hasVersionSUC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#SystemUnitClass> .
+<https://w3id.org/i40/aml#hasVersionSUC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/i40/aml#hasVersionSUC> <http://www.w3.org/2004/02/skos/core#definition> "Points to the version of a System Unit Class"@en .
+<https://w3id.org/i40/aml#hasVersionSUC> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasVersionSUC"@en .
+# 
+# https://w3id.org/i40/aml#hasWriterId
+<https://w3id.org/i40/aml#hasWriterId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasWriterId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+<https://w3id.org/i40/aml#hasWriterId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#hasWriterId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasWriterId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasWriterId> <http://www.w3.org/2004/02/skos/core#definition> "Defines the identification of the Writer, i.e., the tool that produced the file"@en .
+<https://w3id.org/i40/aml#hasWriterId> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasWriterId" .
+# 
+# https://w3id.org/i40/aml#hasWriterName
+<https://w3id.org/i40/aml#hasWriterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasWriterName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasName> .
+<https://w3id.org/i40/aml#hasWriterName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasWriterName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasWriterName> <http://www.w3.org/2004/02/skos/core#definition> "The name of the Writer, i.e., the tool that produced the file"@en .
+<https://w3id.org/i40/aml#hasWriterName> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasWriterName" .
+# 
+# https://w3id.org/i40/aml#hasWriterRelease
+<https://w3id.org/i40/aml#hasWriterRelease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasWriterRelease> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasWriterRelease> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasWriterRelease> <http://www.w3.org/2004/02/skos/core#definition> "Defines the last release of the writter, i.e., the tool that produces the AutomationML file"@en .
+<https://w3id.org/i40/aml#hasWriterRelease> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasWriterRelease"@en .
+# 
+# https://w3id.org/i40/aml#hasWriterVendor
+<https://w3id.org/i40/aml#hasWriterVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasWriterVendor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasWriterVendor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/i40/aml#hasWriterVendor> <http://www.w3.org/2004/02/skos/core#definition> "Defines the vendor of the writter, i.e., the tool that produces the AutomationML file"@en .
+<https://w3id.org/i40/aml#hasWriterVendor> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasWriterVendor"@en .
+# 
+# https://w3id.org/i40/aml#hasWriterVendorURL
+<https://w3id.org/i40/aml#hasWriterVendorURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasWriterVendorURL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasWriterVendorURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/i40/aml#hasWriterVendorURL> <http://www.w3.org/2004/02/skos/core#definition> "Defines the Vendor url of the writter, i.e., the tool that produces the AutomationML file"@en .
+<https://w3id.org/i40/aml#hasWriterVendorURL> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasWriterVendorURL"@en .
+# 
+# https://w3id.org/i40/aml#hasWriterVersion
+<https://w3id.org/i40/aml#hasWriterVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#hasWriterVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/i40/aml#hasVersion> .
+<https://w3id.org/i40/aml#hasWriterVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#AdditionalInformation> .
+<https://w3id.org/i40/aml#hasWriterVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#hasWriterVersion> <http://www.w3.org/2004/02/skos/core#definition> "Defines the last version of the writter, i.e., the tool that produces the AutomationML file"@en .
+<https://w3id.org/i40/aml#hasWriterVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasWriterVersion"@en .
+# 
+# https://w3id.org/i40/aml#refBaseSystemUnitPath
+<https://w3id.org/i40/aml#refBaseSystemUnitPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#refBaseSystemUnitPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#InternalElement> .
+<https://w3id.org/i40/aml#refBaseSystemUnitPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/i40/aml#refSemanticAttribute
+<https://w3id.org/i40/aml#refSemanticAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/i40/aml#refSemanticAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/i40/aml#refSemanticAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/i40/aml#Attribute> .
+<https://w3id.org/i40/aml#refSemanticAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml#refSemanticAttribute> <http://www.w3.org/2004/02/skos/core#definition> "Reference to the eClass IRDI identification"@en .
+<https://w3id.org/i40/aml#refSemanticAttribute> <http://www.w3.org/2004/02/skos/core#prefLabel> "refSemanticAttribute"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/TR/prov-o/#Activity" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/Measure
+<http://www.wurvoc.org/vocabularies/om-1.8/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure
+<http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/i40/aml#AdditionalInformation
+<https://w3id.org/i40/aml#AdditionalInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#AdditionalInformation> <http://www.w3.org/2004/02/skos/core#definition> "Additional Information for CAEX File"@en .
+<https://w3id.org/i40/aml#AdditionalInformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "AdditionalInformation"@en .
+# 
+# https://w3id.org/i40/aml#Attribute
+<https://w3id.org/i40/aml#Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#Attribute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "1417686950-AutomationML Whitepaper Part 1 - AutomationML Architecture v2_Oct2014, page 11" .
+<https://w3id.org/i40/aml#Attribute> <http://www.w3.org/2004/02/skos/core#definition> "Property which belongs to an AML object"@en .
+<https://w3id.org/i40/aml#Attribute> <http://www.w3.org/2004/02/skos/core#prefLabel> "Attribute"@en .
+# 
+# https://w3id.org/i40/aml#CAEXFile
+<https://w3id.org/i40/aml#CAEXFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#CAEXFile> <http://www.w3.org/2004/02/skos/core#definition> "Root-element of the CAEX schema"@en .
+<https://w3id.org/i40/aml#CAEXFile> <http://www.w3.org/2004/02/skos/core#prefLabel> "CAEXFile"@en .
+# 
+# https://w3id.org/i40/aml#ExternalInterface
+<https://w3id.org/i40/aml#ExternalInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#ExternalInterface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/i40/aml#InterfaceClass> .
+<https://w3id.org/i40/aml#ExternalInterface> <http://www.w3.org/2004/02/skos/core#altLabel> "EI"@en .
+<https://w3id.org/i40/aml#ExternalInterface> <http://www.w3.org/2004/02/skos/core#prefLabel> "ExternalInterface"@en .
+# 
+# https://w3id.org/i40/aml#ExternalReference
+<https://w3id.org/i40/aml#ExternalReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#ExternalReference> <http://www.w3.org/2004/02/skos/core#definition> "External Reference for a CAEX File"@en .
+<https://w3id.org/i40/aml#ExternalReference> <http://www.w3.org/2004/02/skos/core#prefLabel> "ExternalReference"@en .
+# 
+# https://w3id.org/i40/aml#ExternalStandard
+<https://w3id.org/i40/aml#ExternalStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#ExternalStandard> <http://www.w3.org/2004/02/skos/core#definition> "Represents an External Standard which is used to provide unique Semantic reference for AML elements, e.g., eClass"@en .
+<https://w3id.org/i40/aml#ExternalStandard> <http://www.w3.org/2004/02/skos/core#prefLabel> "ExternalStandard"@en .
+# 
+# https://w3id.org/i40/aml#InstanceHierarchy
+<https://w3id.org/i40/aml#InstanceHierarchy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#InstanceHierarchy> <http://www.w3.org/2004/02/skos/core#altLabel> "IH"@en .
+<https://w3id.org/i40/aml#InstanceHierarchy> <http://www.w3.org/2004/02/skos/core#definition> "CAEX InstanceHierarchies serve for the storage of individual and project related engineering information. They form the centre of the AML top-level format and contain all individual data objects including properties, interfaces, relations and references."@en .
+<https://w3id.org/i40/aml#InstanceHierarchy> <http://www.w3.org/2004/02/skos/core#prefLabel> "InstanceHierarchy"@en .
+# 
+# https://w3id.org/i40/aml#InterfaceClass
+<https://w3id.org/i40/aml#InterfaceClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#InterfaceClass> <http://www.w3.org/2004/02/skos/core#altLabel> "IC"@en .
+<https://w3id.org/i40/aml#InterfaceClass> <http://www.w3.org/2004/02/skos/core#definition> "Defines the relations between AML Objects. Should be identified with its tag name"@en .
+<https://w3id.org/i40/aml#InterfaceClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "InterfaceClass"@en .
+# 
+# https://w3id.org/i40/aml#InterfaceClassLib
+<https://w3id.org/i40/aml#InterfaceClassLib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#InterfaceClassLib> <http://www.w3.org/2004/02/skos/core#altLabel> "IC Lib"@en .
+<https://w3id.org/i40/aml#InterfaceClassLib> <http://www.w3.org/2004/02/skos/core#definition> "Library containing AML Interface Classes"@en .
+<https://w3id.org/i40/aml#InterfaceClassLib> <http://www.w3.org/2004/02/skos/core#prefLabel> "InterfaceClassLib"@en .
+# 
+# https://w3id.org/i40/aml#InternalElement
+<https://w3id.org/i40/aml#InternalElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#InternalElement> <http://www.w3.org/2004/02/skos/core#altLabel> "IE"@en .
+<https://w3id.org/i40/aml#InternalElement> <http://www.w3.org/2004/02/skos/core#definition> "Shall be used in order to define nested objects inside of a SystemUnitClass or another InternalElement. Allows description of the internal structure of an CAEX object"@en .
+<https://w3id.org/i40/aml#InternalElement> <http://www.w3.org/2004/02/skos/core#prefLabel> "InternalElement"@en .
+# 
+# https://w3id.org/i40/aml#InternalLink
+<https://w3id.org/i40/aml#InternalLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#InternalLink> <http://www.w3.org/2004/02/skos/core#altLabel> "IL"@en .
+<https://w3id.org/i40/aml#InternalLink> <http://www.w3.org/2004/02/skos/core#definition> "Connects two CAEX elements like InternalElements"@en .
+<https://w3id.org/i40/aml#InternalLink> <http://www.w3.org/2004/02/skos/core#prefLabel> "InternalLink"@en .
+# 
+# https://w3id.org/i40/aml#Project
+<https://w3id.org/i40/aml#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#Project> <http://www.w3.org/2004/02/skos/core#definition> "A Project related to the header information with the CAEX File"@en .
+<https://w3id.org/i40/aml#Project> <http://www.w3.org/2004/02/skos/core#prefLabel> "Project"@en .
+# 
+# https://w3id.org/i40/aml#RoleClass
+<https://w3id.org/i40/aml#RoleClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#RoleClass> <http://www.w3.org/2004/02/skos/core#altLabel> "RC"@en .
+<https://w3id.org/i40/aml#RoleClass> <http://www.w3.org/2004/02/skos/core#definition> "RoleClasses are vendor independent and generic entities. They are used to assign a generic semantics to an object instance and to describe requirements of this object instance. Also, they can help in mapping data models of different engineering tools."@en .
+<https://w3id.org/i40/aml#RoleClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "RoleClass"@en .
+# 
+# https://w3id.org/i40/aml#RoleClassLib
+<https://w3id.org/i40/aml#RoleClassLib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#RoleClassLib> <http://www.w3.org/2004/02/skos/core#altLabel> "RCL"@en .
+<https://w3id.org/i40/aml#RoleClassLib> <http://www.w3.org/2004/02/skos/core#definition> "Provides definitions of abstract characteristics of CAEX objects and thus serve the automatic semantic interpretation of user-defined AML objects"@en .
+<https://w3id.org/i40/aml#RoleClassLib> <http://www.w3.org/2004/02/skos/core#prefLabel> "RoleClassLib"@en .
+# 
+# https://w3id.org/i40/aml#SystemUnitClass
+<https://w3id.org/i40/aml#SystemUnitClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#SystemUnitClass> <http://www.w3.org/2004/02/skos/core#altLabel> "SUC"@en .
+<https://w3id.org/i40/aml#SystemUnitClass> <http://www.w3.org/2004/02/skos/core#definition> "Describe concrete types of objects reused within engineering. Allows for different user-defined classes. Inheritance between a SystemUnitClass and an object instance is not allowed."@en .
+<https://w3id.org/i40/aml#SystemUnitClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "SystemUnitClass"@en .
+# 
+# https://w3id.org/i40/aml#SystemUnitClassLib
+<https://w3id.org/i40/aml#SystemUnitClassLib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#SystemUnitClassLib> <http://www.w3.org/2004/02/skos/core#altLabel> "SUC Lib"@en .
+<https://w3id.org/i40/aml#SystemUnitClassLib> <http://www.w3.org/2004/02/skos/core#definition> "Store vendor specific AML classes"@en .
+<https://w3id.org/i40/aml#SystemUnitClassLib> <http://www.w3.org/2004/02/skos/core#prefLabel> "SystemUnitClassLib"@en .
+# 
+# https://w3id.org/i40/aml#eClassSpecification
+<https://w3id.org/i40/aml#eClassSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/i40/aml#eClassSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/i40/aml#ExternalStandard> .
+<https://w3id.org/i40/aml#eClassSpecification> <http://www.w3.org/2004/02/skos/core#definition> "Describe the necessary links to eCl@ass Standard(e.g., version, classification and IRDI)"@en .
+<https://w3id.org/i40/aml#eClassSpecification> <http://www.w3.org/2004/02/skos/core#prefLabel> "eClassSpecification"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,15 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 prov:wasAttributedTo <http://sda.cs.uni-bonn.de/people/irlan-grangel-gonzalez/>;
+	 dc:creator <http://sda.cs.uni-bonn.de/people/irlan-grangel-gonzalez/>;
+	 prov:wasAttributedTo <https://at.linkedin.com/in/olga-kovalenko-979552108/>;
+	 dc:creator <https://at.linkedin.com/in/olga-kovalenko-979552108/>;
+	 prov:wasAttributedTo <https://www.linkedin.com/in/marta-sabou-0b310a1/>;
+	 dc:contributor <https://www.linkedin.com/in/marta-sabou-0b310a1/>;
+	 prov:wasAttributedTo <https://www.linkedin.com/in/soerenauer/>;
+	 dc:contributor <https://www.linkedin.com/in/soerenauer/>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2016-03-23";
+.

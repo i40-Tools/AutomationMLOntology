@@ -1,0 +1,1 @@
+java -jar widoco-1.4.2-jar-with-dependencies.jar -ontFile ../aml.ttl
