@@ -443,22 +443,22 @@ om:unit_of_measure rdf:type owl:ObjectProperty .
                  skos:prefLabel "hasRoleClassLib"@en .
 
 
-###  https://w3id.org/i40/aml#hasRoleRequeriment
-:hasRoleRequeriment rdf:type owl:ObjectProperty ;
+###  https://w3id.org/i40/aml#hasRoleRequerement
+:hasRoleRequerement rdf:type owl:ObjectProperty ;
                     rdfs:range :RoleClass ;
-                    skos:prefLabel "hasRoleRequeriment"@en .
+                    skos:prefLabel "hasRoleRequerement"@en .
 
 
 ###  https://w3id.org/i40/aml#hasRoleRequirementIE
 :hasRoleRequirementIE rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :hasRoleRequeriment ;
+                      rdfs:subPropertyOf :hasRoleRequerement ;
                       rdfs:domain :InternalElement ;
                       rdfs:range :RoleClass .
 
 
 ###  https://w3id.org/i40/aml#hasRoleRequirementSUC
 :hasRoleRequirementSUC rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :hasRoleRequeriment ;
+                       rdfs:subPropertyOf :hasRoleRequerement ;
                        rdfs:domain :SystemUnitClass ;
                        rdfs:range :RoleClass .
 
