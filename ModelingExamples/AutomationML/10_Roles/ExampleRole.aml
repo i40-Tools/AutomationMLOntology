@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile FileName="ExampleRole.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML e.V.</WriterName>
+			<WriterID>AutomationML e.V.</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2012-02-20
+			</LastWritingDateTime>
+			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+			<WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<ExternalReference Path="Libs\RoleClass Libraries\AutomationMLBaseRoleClassLib.aml" Alias="AutomationMLBaseRoleClassLib" />
+	<RoleClassLib Name="BodyShopRoleClassLib">
+		<Version>1.0</Version>
+		<RoleClass Name="AssemblyStation" RefBaseClassPath="AutomationMLBaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="DoorAssembly" RefBaseClassPath="BodyShopRoleClassLib/AssemblyStation" />
+		<RoleClass Name="HoodAssembly" RefBaseClassPath="BodyShopRoleClassLib/AssemblyStation" />
+	</RoleClassLib>
+</CAEXFile>

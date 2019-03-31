@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" FileName="AutomationMLInterfaceClassLib.aml" SchemaVersion="2.15">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>IEC SC65E WG 9</WriterName>
+			<WriterID>IEC SC65E WG 9</WriterID>
+			<WriterVendor>IEC</WriterVendor>
+			<WriterVendorURL>www.iec.ch</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0.0</WriterRelease>
+			<LastWritingDateTime>2013-03-01</LastWritingDateTime>
+			<WriterProjectTitle>Automation Markup Language Standard Libraries</WriterProjectTitle>
+			<WriterProjectID>Automation Markup Language Standard Libraries</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+		<Description>Standard Automation Markup Language Interface Class Library</Description>
+		<Version>2.2.0</Version>
+		<InterfaceClass Name="AutomationMLBaseInterface">
+			<InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="Direction" AttributeDataType="xs:string" />
+			</InterfaceClass>
+			<InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+				<InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector" />
+				<InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector" />
+			</InterfaceClass>
+			<InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+				<InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+				</InterfaceClass>
+			</InterfaceClass>
+	</InterfaceClassLib>
+</CAEXFile>

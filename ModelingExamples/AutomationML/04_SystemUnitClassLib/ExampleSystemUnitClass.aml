@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="ExampleSystemUnitClass.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML e.V.</WriterName>
+			<WriterID>AutomationML e.V.</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2012-02-20</LastWritingDateTime>
+			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+			<WriterProjectID>AutomationML Tutorial Examples</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+	<SystemUnitClassLib Name="Conveyors">
+		<Version>1.0</Version>
+		<SystemUnitClass Name="RollerConveyor">
+			<Attribute Name="maxConveyingSpeed" AttributeDataType="xs:double" Unit="m/s" />
+			<Attribute Name="maxTransportationWeight" AttributeDataType="xs:double" Unit="kg" />
+			<ExternalInterface Name="Product" ID="{dbaad283-b832-45c5-9c13-5d158fd88488}" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<InternalElement Name="DriveControl" ID="{26ba29ca-2420-4618-8d0e-b85f4b5681f4}">
+				<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+			</InternalElement>
+		</SystemUnitClass>
+	</SystemUnitClassLib>
+</CAEXFile>

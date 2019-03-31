@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="ExamplePPR_Concept.aml.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML e.V.</WriterName>
+			<WriterID>AutomationML e.V.</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2012-02-20
+			</LastWritingDateTime>
+			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+			<WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+	<InstanceHierarchy Name="ConveyorSystem">
+		<InternalElement Name="RollerConveyor" ID="{45e20f8e-7351-4af9-bdfd-3c019674de55}" RefBaseSystemUnitPath="ConveyorSystemLib/RollerConveyor">
+			<Attribute Name="maxConveyingSpeed" AttributeDataType="xs:double" Unit="m/s" />
+			<Attribute Name="maxTransportationWeight" AttributeDataType="xs:double" Unit="kg" />
+			<ExternalInterface Name="Product" ID="{dbaad283-b832-45c5-9c13-5d158fd88488}" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<ExternalInterface Name="Process" ID="b87f1398-84e7-40fe-9869-6dc0240c3511" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+		</InternalElement>
+		<InternalElement Name="Transportation" ID="{68c10a2b-2b87-4e12-904b-ab0324e5bb67}" RefBaseSystemUnitPath="ConveyorSystemLib/Transportation">
+			<ExternalInterface Name="Resource" ID="0ee2d1d4-8902-4ef1-b5cc-8f2a1f1b5729" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<ExternalInterface Name="Product" ID="7ebf5d4d-90eb-4108-86af-41d9696b6761" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+		</InternalElement>
+		<InternalElement Name="Pallet" ID="{68757a2f-0249-42e6-b7a6-4aa5fb501596}" RefBaseSystemUnitPath="ConveyorSystemLib/Pallet">
+			<ExternalInterface Name="Resource" ID="3048176e-631c-40b1-97fb-d085cd66bf7d" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<ExternalInterface Name="Process" ID="344bfa47-19c6-4a9a-bbf7-7c5baf43ae6f" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<SystemUnitClassLib Name="ConveyorSystemLib">
+		<Version>1.0</Version>
+		<SystemUnitClass Name="RollerConveyor">
+			<Attribute Name="maxConveyingSpeed" AttributeDataType="xs:double" Unit="m/s" />
+			<Attribute Name="maxTransportationWeight" AttributeDataType="xs:double" Unit="kg" />
+			<ExternalInterface Name="Product" ID="5716d815-66e4-476f-b2da-d947f5fccd9d" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<ExternalInterface Name="Process" ID="ed1cfa4d-a059-4c42-a0b2-280769f8b62b" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<SupportedRoleClass RefRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+		</SystemUnitClass>
+		<SystemUnitClass Name="Transportation">
+			<ExternalInterface Name="Resource" ID="2af4288a-c2ff-4097-b7b3-d1cb7ca68c13" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<ExternalInterface Name="Product" ID="08ea0d88-6632-4d32-b7c1-1f0e883a6c22" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<SupportedRoleClass RefRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+		</SystemUnitClass>
+		<SystemUnitClass Name="Pallet">
+			<ExternalInterface Name="Resource" ID="8df48e63-4cca-4a7e-be47-84e126416215" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<ExternalInterface Name="Process" ID="e0990a6b-a1aa-4957-88d2-9e6c5c8efaa4" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PPRConnector" />
+			<SupportedRoleClass RefRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+		</SystemUnitClass>
+	</SystemUnitClassLib>
+</CAEXFile>

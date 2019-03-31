@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="ExampleInternalElement.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML e.V.</WriterName>
+			<WriterID>AutomationML e.V.</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2012-02-20
+			</LastWritingDateTime>
+			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+			<WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+	<InstanceHierarchy Name="MechatronicEngineering">
+		<InternalElement Name="RollerConveyor" ID="{74d0c8ef-ab53-462a-8225-306ed22dc0f3}">
+			<Attribute Name="maxConveyingSpeed" AttributeDataType="xs:double" Unit="m/s">
+				<Value>1.5</Value>
+			</Attribute>
+			<Attribute Name="maxTransportationWeight" AttributeDataType="xs:double" Unit="kg">
+				<Value>35</Value>
+			</Attribute>
+			<ExternalInterface Name="Load" RefBaseClassPath="MyInterfaces/Load" />
+			<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<InterfaceClassLib Name="MyInterfaces">
+		<Version>1.0</Version>
+		<InterfaceClass Name="Load" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+	</InterfaceClassLib>
+</CAEXFile>
